@@ -1,6 +1,7 @@
 # toonflix
 
-A new Flutter project.
+A new Flutter project which displays the webtoon information, and helps to redirect to the original site.
+.
 
 ## Getting Started
 
