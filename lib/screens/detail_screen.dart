@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/detail_episodes_widget.dart';
-import '../widgets/detail_information_widget.dart';
-import '../widgets/navigation_bar_widget.dart';
+import '../widgets/detail/detail_episodes_widget.dart';
+import '../widgets/detail/detail_information_widget.dart';
+import '../widgets/detail/detail_navigation_bar_widget.dart';
 
 class DetailScreen extends StatelessWidget {
   final String title, thumb, id;
@@ -13,19 +13,24 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: NavBar(
+      appBar: DetailNavigationBar(
         title: title,
       ),
-      body: Column(
-        children: [
-          DetailInformationWidget(
-            thumb: thumb,
-            id: id,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 25),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              DetailInformationWidget(
+                thumb: thumb,
+                id: id,
+              ),
+              DetailEpisodesWidget(
+                id: id,
+              ),
+            ],
           ),
-          DetailEpisodesWidget(
-            id: id,
-          ),
-        ],
+        ),
       ),
     );
   }

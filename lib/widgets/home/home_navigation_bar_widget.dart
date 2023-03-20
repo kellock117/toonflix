@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-class NavBar extends StatelessWidget implements PreferredSizeWidget {
-  final String title;
-  const NavBar({
+class HomeNavigationBar extends StatelessWidget implements PreferredSizeWidget {
+  const HomeNavigationBar({
     super.key,
-    required this.title,
   });
 
   @override
@@ -12,9 +10,9 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: Colors.white,
       foregroundColor: Colors.green,
-      title: Text(
-        title,
-        style: const TextStyle(
+      title: const Text(
+        "오늘의 웹툰",
+        style: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.w400,
         ),

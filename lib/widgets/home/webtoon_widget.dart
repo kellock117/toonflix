@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../screens/detail_screen.dart';
-import '../models/webtoon_model.dart';
-import './image_widget.dart';
+import '../../screens/detail_screen.dart';
+import '../../models/webtoon_model.dart';
+import '../image_widget.dart';
 
 class Webtoon extends StatelessWidget {
   final String title, thumb, id;

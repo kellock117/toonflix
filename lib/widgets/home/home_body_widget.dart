@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/webtoon_widget.dart';
-import '../models/webtoon_model.dart';
-import '../services/api_service.dart';
+import 'webtoon_widget.dart';
+import '../../models/webtoon_model.dart';
+import '../../services/api_service.dart';
 
 // ignore: must_be_immutable
 class HomeBodyWidget extends StatelessWidget {
